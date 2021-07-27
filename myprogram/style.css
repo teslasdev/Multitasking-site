@@ -1,0 +1,310 @@
+:root {
+    --color-grey-dark-4:#777;
+    --blue: #0814bb;
+    --indigo: #4d0686;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --black:#000;
+    --gray: #6c757d;
+    --light-grey: rgb(245, 248, 248);
+    --grey:#999;
+    --gray-dark: #343a40;
+    --primary: #074688;
+    --light-color:#38c5e8;
+    --primary-dark: #0e063f;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --light-cyan:rgb(239, 241, 243);
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    /* list-style: none; */
+    text-decoration: none;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Opan Sans',sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color:var(--grey);
+    background-color: var( --primary);
+}
+
+.container {
+    background-color: var(--white);
+    margin: 10rem;
+    /* height: 1000rem; */
+    border-radius: 3rem;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: stretch;*/
+    padding: 10rem;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Open Sans';
+}
+
+.banner {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    position: relative;
+    /* left: 50%; */
+    filter:grayscale(100%);
+   
+}
+.marquee {
+    padding: 3rem;
+    font-size: 2rem;
+    margin-top: 3rem;
+    background-image: linear-gradient(to right,var(--primary),var(--cyan));
+    color: var(--white);
+    text-align:center;
+}
+.text {
+    color: red;
+    font-size: 2rem;
+}
+.txt {
+    
+    color: var(--teal);
+    text-align: center;
+    font-size: 2rem;
+}
+.error {
+    background-color: rgb(241, 141, 149);
+    padding: 1.5rem;
+    border-radius: 5px;
+    color: #fff;
+    width: 40rem;
+    font-size: 1.5rem;
+  }
+
+.form-input {
+    padding: 1rem;
+    font-family: 'Open Sans';
+}
+.form-check {
+    padding: 1rem;
+    font-family: 'Open Sans';
+    color: var(--primary-dark);
+    font-size: 1.9rem;
+    width: 90%;
+    font-weight: 900;
+}
+.form-input input {
+    padding: 2rem;
+    width: 40rem; 
+    border: 2px solid lightgray;
+}
+.form-input select {
+    padding: 2rem;
+    width: 40rem; 
+    border: 2px solid lightgray;
+}
+.form-input input:focus {
+    outline: none;
+}
+.form-input select:focus {
+    outline: none;
+}
+.submit {
+    background-image: linear-gradient(to right,var(--primary),var(--cyan));
+    border: none !important;
+    color: white;
+    outline: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+.timer {
+    font-size: 1.8rem;
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0;
+    justify-content: space-between;
+    width: 45%;
+}
+.timer-read {
+    background-color: #000;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer {
+    font-size: 1.5rem;
+    margin: 3rem;
+    text-align: center;
+    color: #ccc;
+}
+.bg {
+    background-color: var(--teal);
+}
+.bg-margin {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 15rem;
+}
+.join {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1.5rem;
+    border-radius: 3px;
+    color: var(--white);
+    font-size: 1.5rem;
+    background-image: linear-gradient(to right,var(--primary),var(--cyan));  
+}
+.email {
+    background-color: #6c757d;
+    padding: 1rem;
+
+    style='background-color: #6c757d;
+    padding: 1rem;';
+}
+
+.email-container {
+    background-color: var(--white);
+    margin: 2rem;
+    /* height: 1000rem; */
+    box-shadow: 2px 3px 8px rgba(#000,.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 2rem;
+    font-size: 1.2rem;
+
+    style='background-color: var(--white);
+    margin: 2rem;
+    /* height: 1000rem; */
+    box-shadow: 2px 3px 8px rgba(#000,.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 2rem;
+    font-size: 1.2rem;'
+}
+.header {
+    style='display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    border-bottom: 1px solid #ccc;'
+}
+.logo {
+    width: 12rem;
+    height: 6rem;
+    padding-bottom: 2rem;
+}
+.txt-content__primary {
+    font-size: 1.2rem;
+    font-family: 'Open Sans';
+    font-weight: 100;
+    style=" font-size: 1.2rem;
+    font-family: 'Open Sans';
+    font-weight: 100;"
+}
+.pay {
+    margin: 3rem;
+    text-align: center;
+}
+.btn {
+    background-color: #0814bb;
+    padding: 1rem;
+    color: #fff;
+    style="background-color: #0814bb;
+    padding: 1rem;
+    color: #fff; "
+}
+
+@media (max-width:600px) {
+    html {
+        font-size: 50%;
+    }
+    .container {
+        /* height: 1000rem; */
+        margin:0;
+        width: 100%;
+        padding: 1rem;
+    }
+    .banner {
+        width: 20rem;
+        height: 10rem;
+    }
+    .banner-arrow {
+        width: 20rem;
+        height: 20rem;
+
+    }
+    /* .form-input input {
+        width: 35rem;
+    } */
+
+    .timer {
+        width: 50%;
+    }
+    .timer-read {
+        padding: 1rem;
+    }
+}
+@media (max-width:900px) {
+    html {
+        font-size: 50%;
+    }
+    .container {
+        margin-top: 4rem;
+        /* height: 1000rem; */
+        padding: 2rem;
+    }
+    .banner {
+        width: 20rem;
+        height: 20rem;
+    }
+    .timer {
+        width: 70%;
+    }
+
+}
